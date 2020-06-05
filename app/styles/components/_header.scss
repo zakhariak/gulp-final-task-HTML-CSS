@@ -1,0 +1,285 @@
+body {
+    width: 100%;
+    height: 3451px;
+    background-color: $mainBg;
+    margin: 0 auto;
+
+    @media (max-width: 1000px) {
+        height: 3659px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 780px) {
+        height: 3916px;
+        margin: 0 auto;
+    }
+
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/Header1-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: move 60s step-end 10s;
+    animation-iteration-count: infinite;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 700px;
+        background-position: center;
+    }
+
+    @media (max-width: 780px) {
+        width: 100%;
+        height: 540px;
+    }
+
+    @keyframes move {
+        0% {
+            background-image: url(../images/Header1-min.png);
+        }
+
+        20% {
+            background-image: url(../images/Header2-min.png);
+        }
+
+        40% {
+            background-image: url(../images/Header3-min.png);
+        }
+
+        60% {
+            background-image: url(../images/Header4-min.png);
+        }
+
+        80% {
+            background-image: url(../images/Header5-min.png);
+        }
+
+        100% {
+            background-image: url(../images/Header6-min.png);
+        }
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: black, $alpha: 0.2);
+        display: flex;
+        justify-content: center;
+
+        &__container {
+            width: 940px;
+            height: 100%;
+            justify-content: center;
+            position: relative;
+
+            @media (max-width: 1000px) {
+                width: 768px;
+            }
+
+            @media (max-width: 780px) {
+                width: 320px;
+            }
+
+            &_top {
+                width: 100%;
+                height: 116px;
+                padding: 40px 0 40px 0;
+                display: flex;
+
+                @media (max-width: 780px) {
+                    height: 203.5px;
+                    padding: 20px;
+                    justify-content: space-between;
+                    flex-flow: column-reverse;
+                }
+
+                &_title {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width: 1000px) {
+                        justify-content: center;
+                        padding-left: 6px;
+                    }
+
+                    @media (max-width: 780px) {
+                        width: 100%;
+                        justify-content: center;
+                        align-items: flex-end;
+                    }
+
+                    &_txt {
+                        padding-bottom: 1px;
+                        margin-right: 113px;
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: $mainCl;
+
+                        @media (max-width: 1000px) {
+                            margin-right: 145px;
+                        }
+
+                        @media (max-width: 780px) {
+                            text-align: center;
+                            margin: 0;
+                        }
+                    }
+
+                }
+
+                &_button {
+                    width: 50%;
+                    display: flex;
+                    padding-right: 41px;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    @media (max-width: 1000px) {
+                        justify-content: flex-end;
+                        padding-right: 10px;
+                    }
+
+                    @media (max-width: 780px) {
+                        width: 100%;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 0;
+                    }
+
+                    &_first {
+                        height: 36px;
+                        padding-top: 11px;
+                        margin-left: 25px;
+                        font-family: $firstFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $mainCl;
+                        text-decoration: none;
+
+                        @media (max-width: 780px) {
+                            margin: 0;
+                        }
+                    }
+
+                    &_second {
+                        width: 90px;
+                        height: 36px;
+                        padding: 9px 16px 5px 16px;
+                        margin-left: 19px;
+                        font-family: $firstFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $mainCl;
+                        text-decoration: none;
+                        border: 2px solid $mainCl;
+                        border-radius: 40px;
+
+                        @media (max-width: 1000px) {
+                            margin-right: 41px;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header__container_bottom {
+            width: 100%;
+            height: 584px;
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: 780px) {
+                height: 336.5px;
+            }
+
+            &_block {
+                margin-top: 107.5px;
+                margin-bottom: 224px;
+                width: 470px;
+                height: 252.5px;
+                text-align: center;
+
+                @media (max-width: 780px) {
+                    width: 280px;
+                    height: 183.5px;
+                    margin: 0;
+                }
+
+                &_main {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 52px;
+                    line-height: 63px;
+                    text-align: center;
+                    color: $mainCl;
+
+                    @media (max-width: 780px) {
+                        font-size: 30px;
+                        line-height: 37px;
+                    }
+                }
+
+                &_second {
+                    margin-top: 30px;
+                    margin-left: -2px;
+                    font-family: $thirdFont;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 24.5px;
+                    line-height: 24px;
+                    color: #F7F3F2;
+
+                    @media (max-width: 780px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-top: 5.5px;
+                        padding: 0 15px;
+                    }
+                }
+
+                &_button {
+                    width: 225px;
+                    height: 40px;
+                    margin-top: 32.5px;
+                    padding: 0;
+                    font-family: $fourthFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: $mainCl;
+                    outline: none;
+                    border: none;
+                    background-color: $buttonCl;
+                    border-radius: 40px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    @media (max-width: 780px) {
+                        width: 280px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

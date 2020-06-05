@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Thin';
+    src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Solid';
+    src: url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-solid-900.eot"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-solid-900.ttf"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-solid-900.woff"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-solid-900.woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    src: url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-brands-400.ttf"),
+        url("/fonts/fontawesome-free-5.12.1-web/webfonts/fa-brands-400.svg"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-brands-400.eot"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-brands-400.woff"),
+        url("../fonts/fontawesome-free-5.12.1-web/webfonts/fa-brands-400.woff2");
+    font-weight: 400;
+}

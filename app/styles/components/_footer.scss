@@ -1,0 +1,197 @@
+footer {
+    width: 100%;
+    height: 224px;
+    margin-bottom: 36px;
+    border-top: 2px solid $buttonCl;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 20;
+    }
+
+    @media (max-width: 780px) {
+        margin-bottom: 22px;
+        height: 204px;
+    }
+
+    .footer {
+        width: 940px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 38px;
+        display: flex;
+
+        @media (max-width: 1000px) {
+            width: 768px;
+            padding: 38px 37px 0 39px;
+        }
+
+        @media (max-width: 780px) {
+            width: 320px;
+            padding: 8px 20px 0 20px;
+            display: block;
+        }
+
+        &__name {
+            width: 119px;
+            height: 20px;
+            margin-right: 122px;
+            font-family: $firstFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $buttonCl;
+
+            @media (max-width: 1000px) {
+                margin-right: 108px;
+            }
+
+            @media (max-width: 780px) {
+                margin: 13px auto
+            }
+        }
+
+        &__menu {
+            width: 114px;
+            margin-right: 125px;
+
+            @media (max-width: 1000px) {
+                margin-right: -5px;
+            }
+
+            @media (max-width: 780px) {
+                margin: 0 auto;
+                width: 280px;
+                height: 70px;
+            }
+
+            &_title {
+                margin-top: 2px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+
+                @media (max-width: 780px) {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+
+            &_list {
+                width: 100%;
+                height: 156px;
+                margin-top: 11px;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 780px) {
+                    display: none;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $secondFont;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #999999;
+                }
+            }
+
+            &_list2 {
+                width: 280px;
+                height: 52px;
+                display: none;
+                padding: 0 40px;
+
+                @media (max-width: 780px) {
+                    display: block;
+                }
+
+                &_one {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                &_two {
+                    display: flex;
+                    justify-content: center;
+
+                    a:first-child {
+                        @media (max-width: 780px) {
+                            padding-right: 14px;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $secondFont;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #999999;
+                }
+            }
+        }
+
+        &__partners {
+            margin: 0 auto;
+
+            @media (max-width: 780px) {
+                margin-top: 6px;
+            }
+
+            &_title {
+                margin-top: 2px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+
+                @media (max-width: 780px) {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__designed {
+            margin-left: auto;
+
+            @media (max-width: 780px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &_by {
+                margin-top: 2px;
+                margin-bottom: 7px;
+                text-align: right;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 1px;
+                color: #CCCCCC;
+
+                @media (max-width: 780px) {
+                    margin: 14px 0 7px 0;
+                }
+            }
+
+            &_logo {
+                width: 110px;
+                height: 24px;
+            }
+        }
+    }
+}
